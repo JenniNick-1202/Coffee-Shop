@@ -1,0 +1,241 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Raleway", sans-serif;
+    background-image:url(../imgs/patternBackground.jpg);
+}
+
+a {
+    text-decoration: none;
+    color: #c3a995;
+}
+
+i {
+    cursor: pointer;
+}
+
+/* navbar */
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #593d3b;
+    color: #c3a995;
+    padding: 25px 60px;
+    margin-bottom: 20px;
+}
+
+
+.shopName {
+    font-size: 50px;
+    font-family: "Poetsen One", sans-serif;
+}
+
+.cart {
+    position: relative;
+    background-color: #c3a995;
+    color:#593d3b;
+    padding: 5px;
+    font-size: 30px;
+    border-radius: 5px;
+}
+
+.cartAmount {
+    position: absolute;
+    top:-15px;
+    right: -10px;
+    font-size: 18px;
+    background-color:beige;
+    border-radius: 3px;
+    font-weight: bold;
+    padding: 2px;
+}
+
+.shoptitle {
+    font-size: 40px;
+    font-family: "Poetsen One", sans-serif;
+    margin-bottom: 20px;
+    text-align: center;
+    color:#593d3b;
+}
+
+.shopDescription {
+    font-size: 20px;
+    text-align: center;
+    color:#593d3b;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* shop */
+
+.shop {
+    display: grid;
+    grid-template-columns: repeat(4, 223px);
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 1000px) {
+   .shop {
+        grid-template-columns: repeat(2, 223px);
+    }
+}
+
+@media (max-width: 500px) {
+   .shop {
+        grid-template-columns: repeat(1, 223px);
+    }
+
+.shopName {
+    font-size: 24px;
+    font-family: "Poetsen One", sans-serif;
+}
+
+.shoptitle {
+    font-size: 20px;
+    font-family: "Poetsen One", sans-serif;
+    margin-bottom: 20px;
+    text-align: center;
+    color:#593d3b;
+}
+.shopDescription {
+    font-size: 16px;
+    text-align: center;
+    color:#593d3b;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+    padding: 5px;
+}
+}
+
+.item {
+    border: 2px solid #593d3b;
+    border-radius: 4px;
+    background-color: white;
+}
+
+.item img {
+    width: 100%;
+    border-radius: 4px 4px 0 0;
+}
+
+.detail {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 10px;
+}
+
+.priceQty {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    font-size: 16px;
+}
+
+.bi-dash-lg {
+    color: red;
+}
+
+bi-plus-lg {
+    color: green;
+}
+
+.text-center {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* shopping basket */
+
+.HomeBtn, .checkout, .EmptyBasket {
+    background-color: #593d3b;
+    color: #c3a995;
+    font-size: 20px;
+    border:none;
+    padding: 10px;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 6px;
+    font-family: "Poetsen One", sans-serif;
+}
+
+.checkout {
+    background-color: #c3a995;
+    color:#593d3b;
+}
+
+.bi-x-lg {
+    color: red;
+    font-weight: bolder;
+}
+
+.shoppingBasket {
+    display: grid;
+    grid-template-columns: repeat(1, 450px);
+    justify-content: center;
+    gap: 15px;
+}
+
+/* shopping basket items  */
+
+.basket-item {
+    border: 2px solid #593d3b;
+    border-radius: 4px;
+    display: flex;
+    background-color: white;
+}
+
+.title-price-x {
+    width: 340px;
+    display: flex;
+    justify-content: space-between;
+    align-items: right;
+    padding: 2px;
+}
+
+.title-price {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    padding: 5px;
+}
+
+.basket-item-price {
+    background-color: #593d3b;
+    color:#c3a995;
+    border-radius: 4px;
+    padding: 3px 6px;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    font-size: 16px;
+    padding: 5px;
+}
+
+.basketPrice {
+    font-size: 20px;
+    font-weight: bold;
+    color: #593d3b;
+    padding: 5px;
+}
